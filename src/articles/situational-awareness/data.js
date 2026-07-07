@@ -72,6 +72,14 @@ const article = {
         {
           take: { en: "GPT-2 to GPT-4 took us from preschooler to smart high schooler in just four years. That jump will happen again." },
           quote: { en: "I make the following claim: it is strikingly plausible that by 2027, models will be able to do the work of an AI researcher/engineer. That doesn't require believing in sci-fi; it just requires believing in straight lines on a graph." },
+          media: [
+            {
+              type: "image",
+              src: "assets/source/pdf-p008-img1-fed1b1b8.png",
+              alt: { en: "The iconic AGI trajectory chart from Aschenbrenner showing compute scaleup from GPT-2 to GPT-4 and projected to AGI" },
+              caption: { en: "Figure 1: Rough estimates of past and future scaleup of effective compute. As we scale models, they consistently get smarter, and by counting the OOMs we get a rough sense of what model intelligence we should expect in the near future." }
+            }
+          ],
           paragraphs: [
             { text: { en: "GPT-4's capabilities came as a shock to many: an AI system that could write code and essays, reason through difficult math problems, and ace college exams. A few years ago, most thought these were impenetrable walls. But GPT-4 was merely the continuation of a decade of breakneck progress in deep learning." } },
             { text: { en: "GPT-2 (2019) was like a preschooler: impressive for sometimes managing to string together a few coherent sentences, but it could barely count to 5 without getting tripped up. GPT-3 (2020) was like an elementary schooler: with few-shot examples it could do simple useful tasks, and was commercially useful in narrow ways. GPT-4 (2023) was like a smart high schooler: it could write sophisticated code, reason through difficult math, and beat the vast majority of high schoolers on whatever tests we could give it." } },
@@ -82,6 +90,20 @@ const article = {
         {
           take: { en: "Three drivers\u2014compute scaling (~0.5 OOMs/year), algorithmic efficiencies (~0.5 OOMs/year), and unhobbling gains\u2014each independently push capabilities forward." },
           quote: { en: "With each OOM of effective compute, models predictably, reliably get better. If we can count the OOMs, we can (roughly, qualitatively) extrapolate capability improvements." },
+          media: [
+            {
+              type: "image",
+              src: "assets/source/pdf-p015-img1-17a39eeb.png",
+              alt: { en: "AI capabilities vs human performance across domains — reading comprehension, image recognition, language understanding, etc." },
+              caption: { en: "Figure 6: AI test scores vs human performance over time. Within each domain, initial AI performance is set to ~100 (with human as baseline of zero)." }
+            },
+            {
+              type: "image",
+              src: "assets/source/pdf-p021-img1-0a95ba80.png",
+              alt: { en: "Training compute of notable models from AlexNet to GPT-4, showing the 0.6 OOM/year trendline" },
+              caption: { en: "Figure 11: Training compute of notable deep learning models over time (Source: Epoch AI). The scaleup from GPT-2 to GPT-3 in a year was unusual, but all indications are the doubling time has reverted back to ~0.6 OOMs/year." }
+            }
+          ],
           paragraphs: [
             { text: { en: "The magic of deep learning is that it just works\u2014and the trendlines have been astonishingly consistent, despite naysayers at every turn. We can decompose the progress from GPT-2 to GPT-4 into three categories of scaleups: compute, algorithmic efficiencies, and unhobbling gains." } },
             { text: { en: "On compute: training compute used for frontier AI systems has grown at roughly 0.5 OOMs per year for the last decade and a half, primarily because of massive investment increases and specializing chips for AI workloads. GPT-4 used roughly 3,000x to 10,000x more raw compute than GPT-2. This is close to 5x the speed of Moore's Law, driven not by chip improvements alone but by sheer investment scale." } },
@@ -93,6 +115,20 @@ const article = {
         {
           take: { en: "Unhobbling\u2014fixing obvious ways models are hobbled\u2014will transform chatbots into agents and drop-in remote workers by 2027." },
           quote: { en: "It's completely wrong to just imagine \"GPT-6 ChatGPT.\" With continued unhobbling progress, the improvements will be step-changes compared to GPT-6 + RLHF. By 2027, rather than a chatbot, you're going to have something that looks more like an agent, like a coworker." },
+          media: [
+            {
+              type: "image",
+              src: "assets/source/pdf-p023-img1-159790d8.png",
+              alt: { en: "Algorithmic progress on ImageNet showing ~0.5 OOMs/year of efficiency gains" },
+              caption: { en: "Figure 13: Measuring algorithmic progress — how much less compute is needed in 2021 vs 2012 to train a model with the same performance? ~0.5 OOMs/year." }
+            },
+            {
+              type: "image",
+              src: "assets/source/pdf-p025-img1-96ef4af7.png",
+              alt: { en: "Decomposition of progress into compute vs algorithmic efficiency contributions" },
+              caption: { en: "Figure 15: Decomposing progress — compute and algorithmic efficiencies (rough illustration)." }
+            }
+          ],
           paragraphs: [
             { text: { en: "The hardest to quantify but no less important category of improvements is \"unhobbling\": fixing the obvious ways in which models are hobbled by default, unlocking latent capabilities and giving them tools. When asked to solve a hard math problem, you would struggle if forced to instantly answer with the first thing that came to mind. Until recently, that is how we had LLMs solve math. Chain-of-thought prompting unlocked step-by-step reasoning\u2014a small algorithmic tweak that provided the equivalent of a 10x effective compute increase on reasoning problems." } },
             { text: { en: "Other unhobbling gains include RLHF (making models actually useful rather than just predicting random internet text\u2014an RLHF'd small model was equivalent to a non-RLHF'd 100x larger model in human preference), scaffolding (GPT-3.5 with simple scaffolding outperforms un-scaffolded GPT-4), tools (web browsing, code execution), and context length (from 2k tokens with GPT-3 to 1M+ with Gemini 1.5 Pro)." } },
@@ -103,6 +139,14 @@ const article = {
         {
           take: { en: "We should expect roughly 5 more OOMs of effective compute on top of GPT-4 by 2027\u2014another GPT-2-to-GPT-4-sized qualitative jump." },
           quote: { en: "We are on course for AGI by 2027. These AI systems will basically be able to automate basically all cognitive jobs." },
+          media: [
+            {
+              type: "image",
+              src: "assets/source/pdf-p033-img1-51819361.png",
+              alt: { en: "Three-driver decomposition: compute, algorithmic efficiency, and unhobbling gains" },
+              caption: { en: "Figure 17: Decomposing progress — compute, algorithmic efficiencies, and unhobbling (rough illustration)." }
+            }
+          ],
           paragraphs: [
             { text: { en: "Putting the numbers together: GPT-2 to GPT-4 was roughly a 4.5-6 OOM base effective compute scaleup plus major unhobbling gains. In the subsequent 4 years, we should expect 3-6 OOMs of base effective compute scaleup (physical compute plus algorithmic efficiencies), with a best guess of around 5 OOMs, plus step-changes in utility from unhobbling. To put this in perspective: if GPT-4 training took 3 months, in 2027 a leading AI lab will be able to train a GPT-4-level model in a minute." } },
             { text: { en: "Where will that take us? GPT-2 to GPT-4 took us from preschooler to smart high schooler. Another jump like that will very likely take us to models that can outperform PhDs and the best experts in a field. The current trend of AI progress is proceeding at roughly 3x the pace of child development. Your 3x-speed-child just graduated high school; it'll be taking your job before you know it." } },
@@ -131,6 +175,20 @@ const article = {
         {
           take: { en: "Automated AI research could compress a human-decade of algorithmic progress (5+ OOMs) into a year, leading to superintelligence." },
           quote: { en: "It's strikingly plausible we'd go from AGI to superintelligence very quickly, perhaps in 1 year." },
+          media: [
+            {
+              type: "image",
+              src: "assets/source/pdf-p043-img1-8b3208d8.png",
+              alt: { en: "Projected effective compute scaleup showing the post-decade slowdown" },
+              caption: { en: "Figure 22: Rough projections on effective compute scaleup. We have been racing through the OOMs this decade; after the early 2030s, we will face a slow slog." }
+            },
+            {
+              type: "image",
+              src: "assets/source/pdf-p048-img1-da3aa002.png",
+              alt: { en: "Intelligence explosion acceleration — 5+ OOMs of gains in a year from automated AI research" },
+              caption: { en: "Figure 24: Automated AI research could accelerate algorithmic progress, leading to 5+ OOMs of effective compute gains in a year." }
+            }
+          ],
           paragraphs: [
             { text: { en: "Automated AI researchers will have enormous advantages over human researchers: they'll have read every ML paper ever written, learned in parallel from each of their copies, accumulated millennia of experience, written millions of lines of code with perfect attention, and developed far deeper ML intuitions than any human. The automated researchers will also be able to share context and coordinate much more efficiently than human teams." } },
             { text: { en: "Could 100 million automated researchers, each working at 100x human speed, compress a decade of algorithmic progress into a year? That would be 5+ OOMs in a year. This is a similar scaleup to what produced the GPT-2-to-GPT-4 jump\u2014a capability jump from preschooler to smart high schooler, but now on top of AI systems already as smart as expert AI researchers. The jump to superintelligence would be qualitatively wild: systems whose understanding and abilities would exceed those even of humanity combined." } }
@@ -168,6 +226,20 @@ const article = {
         {
           take: { en: "Individual training clusters will cost $100s of billions by 2028 and $1T+ by 2030, requiring power equivalent to a small US state and then 20% of US electricity production." },
           quote: { en: "You see, I told you it couldn't be done without turning the whole country into a factory. You have done just that." },
+          media: [
+            {
+              type: "image",
+              src: "assets/source/pdf-p076-img1-b4102de7.png",
+              alt: { en: "Trillion-dollar cluster visualization — the scale of compute infrastructure needed" },
+              caption: { en: "Figure 27: The trillion-dollar cluster (DALL-E illustration). This is the scale of infrastructure we are racing to build." }
+            },
+            {
+              type: "image",
+              src: "assets/source/pdf-p079-img2-953d3024.png",
+              alt: { en: "Nvidia datacenter revenue showing explosive growth since the AI boom" },
+              caption: { en: "Figure 29: Quarterly Nvidia datacenter revenue. Plot by Thomas Woodside." }
+            }
+          ],
           paragraphs: [
             { text: { en: "The race to AGI won't just play out in code\u2014it'll be a race to mobilize America's industrial might. Unlike anything else we've recently seen come out of Silicon Valley, AI is a massive industrial process: each new model requires a giant new cluster, soon giant new power plants, and eventually giant new chip fabs. The binding constraint on the largest training clusters won't be chips but power: the 100GW required by the trillion-dollar cluster is equivalent to more than 20% of US electricity production." } },
             { text: { en: "The numbers escalate rapidly: the GPT-4 cluster used about 10,000 H100-equivalents at roughly $500M. By 2026, we should expect a million H100-equivalent cluster costing $10s of billions and requiring a gigawatt of power\u2014equivalent to the Hoover Dam. By 2028, ten million H100-equivalents at $100s of billions, requiring 10GW\u2014equivalent to a small US state. By 2030, one hundred million H100-equivalents at $1T+, requiring 100GW." } },
@@ -178,6 +250,14 @@ const article = {
         {
           take: { en: "AI revenue is doubling every six months. A $100B annual run rate for a big tech company could arrive by mid-2026, justifying ever-greater investment." },
           quote: { en: "Every 10x scaleup in AI investment seems to yield the necessary returns." },
+          media: [
+            {
+              type: "image",
+              src: "assets/source/pdf-p083-img1-268083da.png",
+              alt: { en: "US electricity production vs projected AI demand — the power constraint" },
+              caption: { en: "Figure 30: Comparing trends on total US electricity production to back-of-envelope estimates on AI electricity demands." }
+            }
+          ],
           paragraphs: [
             { text: { en: "Reports suggest OpenAI was at $1B revenue run rate in August 2023 and $2B in February 2024\u2014roughly doubling every 6 months. If that trend holds, we should see a $10B annual run rate by late 2024/early 2025, even without a massive surge from next-generation models. When will a big tech company hit $100B revenue from AI? Very naively extrapolating the doubling pattern suggests mid-2026. Getting a third of Microsoft Office's 350 million paid subscribers to pay $100/month for an AI add-on would do it\u2014just a few hours of monthly productivity gained." } },
             { text: { en: "Historical precedents put these numbers in context. The Manhattan and Apollo programs reached 0.4% of GDP\u2014about $100B annually today. Between 1996-2001, telecoms invested nearly $1T in today's dollars in internet infrastructure. British railway investments in the 1840s totaled 40% of British GDP. $1T/year of AI investment by 2027 would be about 3% of US GDP\u2014dramatic but not unprecedented." } }
@@ -213,6 +293,14 @@ const article = {
         {
           take: { en: "Two key assets must be protected: algorithmic secrets (starting yesterday) and model weights (especially as we get close to AGI)." },
           quote: { en: "Perhaps the single scenario that most keeps me up at night is if China or another adversary is able to steal the automated-AI-researcher-model-weights on the cusp of an intelligence explosion." },
+          media: [
+            {
+              type: "image",
+              src: "assets/source/pdf-p101-img1-7e5ad6bc.png",
+              alt: { en: "Historical parallel: the Manhattan Project security awakening. Leo Szilard and Enrico Fermi" },
+              caption: { en: "Figure 31: Leo Szilard. In the fall of 1940, Fermi had finished new carbon absorption measurements on graphite. Szilard assaulted Fermi with yet another patent idea." }
+            }
+          ],
           paragraphs: [
             { text: { en: "Stealing algorithmic secrets is worth having a 10x or more larger cluster to the PRC. Algorithmic progress is probably similarly important as compute scaling, and we should expect multiple OOMs-worth of algorithmic secrets between now and AGI. More importantly, the frontier AI labs are developing the key paradigm breakthroughs for AGI right now\u2014essentially the \"AlphaGo self-play\" equivalent for general intelligence. Without better security in the next 12-24 months, we may irreversibly supply China with these key AGI breakthroughs." } },
             { text: { en: "An AI model is just a large file of numbers on a server. This can be stolen. All it takes an adversary to match your trillions of dollars and your smartest minds is to steal this file. Google DeepMind, perhaps the AI lab with the best security, admits to being at security level 0 out of 4\u2014only the most banal and basic measures. Developing state-actor-proof security will require fully airgapped datacenters, hardware encryption, extreme personnel vetting, and government cooperation\u2014and probably takes many years of lead times." } }
@@ -275,6 +363,14 @@ const article = {
         {
           take: { en: "Whoever leads on superintelligence will have a decisive military advantage\u2014perhaps comparable only with nuclear weapons." },
           quote: { en: "The advent of superintelligence will put us in a situation unseen since the advent of the atomic era: those who have it will wield complete dominance over those who don't." },
+          media: [
+            {
+              type: "image",
+              src: "assets/source/pdf-p108-img1-93d528ee.png",
+              alt: { en: "Geopolitical stakes visualization for the AGI race" },
+              caption: { en: "Figure 33: The stakes — who controls superintelligence will have decisive economic and military advantage." }
+            }
+          ],
           paragraphs: [
             { text: { en: "A billion superintelligent scientists and engineers, each much smarter than the smartest human, furiously inventing new technologies day and night. The Gulf War provides a helpful illustration: a 20-30 year lead in military technology let the US-led coalition obliterate the fourth-largest army in the world in a 100-hour ground war, with 292 coalition dead versus 20,000-50,000 Iraqi dead. A lead of a year or two on superintelligence could mean as utterly decisive a military advantage." } },
             { text: { en: "The advantage would be decisive even against nuclear deterrents: improved sensors could locate the quietest submarines, millions of autonomous drones could infiltrate behind enemy lines, and dramatically improved missile defense could intercept incoming weapons. We'll see superhuman hacking, roboarmies, autonomous drone swarms, completely new paradigms we can't yet imagine, and new WMDs with thousandfold increases in destructive power." } }
@@ -284,6 +380,14 @@ const article = {
         {
           take: { en: "China has a clear path to being competitive: outbuild the US on compute and steal the algorithms. Counting them out would be like counting out Google after ChatGPT." },
           quote: { en: "I think there's a pretty clear path for China to be in the game: outbuild the US and steal the algorithms." },
+          media: [
+            {
+              type: "image",
+              src: "assets/source/pdf-p112-img1-8b2bfd53.png",
+              alt: { en: "China strategy and CCP threat to US AGI leadership" },
+              caption: { en: "Figure 35: China clear path to AGI competitiveness — outbuild the US on compute and steal the algorithms." }
+            }
+          ],
           paragraphs: [
             { text: { en: "Many seem complacent about China and AGI. Chinese LLMs are at best comparable to the second tier of US labs. But this is merely a prelude. China now seems to have demonstrated 7nm chip manufacturing, and 7nm is enough\u2014the indigenous Huawei Ascend 910B is only about 2-3x worse on performance per dollar than equivalent Nvidia chips. On the binding constraint of power for the largest training clusters, China can do better than the US: in the last decade, China has built as much new electricity capacity as the entire US capacity, while US capacity has remained flat." } },
             { text: { en: "And on the current course, we will completely surrender our algorithmic advantage: the current state of security makes it trivial for China to infiltrate American labs. If and when the CCP mobilizes in the race to AGI, the picture could start looking very different. I, for one, think we need to operate under the assumption that we will face a full-throated Chinese AGI effort." } }
@@ -310,6 +414,20 @@ const article = {
         {
           take: { en: "The US government will inevitably take over the AGI effort. The question is not if but when\u2014and whether it will be competent." },
           quote: { en: "I find it an insane proposition that the US government will let a random SF startup develop superintelligence. Imagine if we had developed atomic bombs by letting Uber just improvise." },
+          media: [
+            {
+              type: "image",
+              src: "assets/source/pdf-p154-img1-4c332c9f.png",
+              alt: { en: "The Project structure — government AGI project organization" },
+              caption: { en: "Figure 38: The Project structure — what a government AGI project will look like." }
+            },
+            {
+              type: "image",
+              src: "assets/source/pdf-p155-img1-62efc514.png",
+              alt: { en: "Required components for a competent government response to AGI" },
+              caption: { en: "Figure 39: The Project — what needs to happen for a competent USG response to AGI." }
+            }
+          ],
           paragraphs: [
             { text: { en: "Many plans for \"AI governance\" are put forth these days, from licensing frontier AI systems to safety standards to a public cloud with a few hundred million in compute for academics. These seem well-intentioned\u2014but they are making a category error. Superintelligence will be the most powerful weapon mankind has ever developed, giving a decisive military advantage. The radical proposal is not The Project; the radical proposal is taking a bet on private AI CEOs wielding military power." } },
             { text: { en: "The path will mirror other national awakenings: a few more \"2023-level\" leaps in model capabilities, AI revenue exploding to $100B+, early automation of software engineering, and eventually the first genuinely terrifying demonstrations of AI capability. Somewhere around 2026/27 the mood in Washington will become somber. Slowly at first, then all at once, it will become clear: this is the most important challenge for US national security since the invention of the atomic bomb." } },
